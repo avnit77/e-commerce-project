@@ -17,8 +17,6 @@ function renderRock(rock) {
 
     const usd = rock.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     p.textContent = usd;
-    // const priceTextNode = document.createTextNode(usd);
-    // p.appendChild(priceTextNode);
     
     const button = document.createElement('button');
     button.textContent = 'I have 1 dollar and I want a rock';
