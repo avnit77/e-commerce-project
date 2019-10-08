@@ -3,7 +3,7 @@ const igneous = {
     name: 'Igneous Rock',
     image: '../photos/igneous.jpg',
     description: 'Volcano barf',
-    category: 'rocks with holes',
+    category: 'holes',
     price: 1.00,
 };
 
@@ -11,7 +11,7 @@ const anthracite = {
     id: 'metamorphic',
     name: 'Shiny Coal',
     image: '../photos/metamorphic.jpg',
-    description: 'The fanciest coal',
+    description: 'Real bougie coal',
     category: 'fancy',
     price: 20.00,
 };
@@ -19,7 +19,7 @@ const anthracite = {
 const expensive = {
     id: 'diamond',
     name: 'Expensive Rock',
-    image: '../photos/diamon.gif',
+    image: '../photos/diamond.gif',
     description: 'for letting people know you have enough money to buy a very expensive rock',
     category: 'fancy',
     price: 500.00,
