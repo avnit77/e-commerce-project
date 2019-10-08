@@ -8,3 +8,4 @@ for (let i = 0; i < rocks.length; i++) {
     const dom = renderRocks(rock);
     list.appendChild(dom);
 }
+
