@@ -12,8 +12,23 @@ const anthracite = {
     name: 'Shiny Coal',
     image: '../photos/metamorphic.jpg',
     description: 'The fanciest coal',
-    category: 'tropical',
+    category: 'fancy',
     price: 20.00,
 };
 
-const 
+const expensive = {
+    id: 'diamond',
+    name: 'Expensive Rock',
+    image: '../photos/diamon.gif',
+    description: 'for letting people know you have enough money to buy a very expensive rock',
+    category: 'fancy',
+    price: 500.00,
+};
+
+const rocks = [
+    igneous,
+    anthracite,
+    expensive
+];
+
+export default rocks;
