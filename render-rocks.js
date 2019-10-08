@@ -19,7 +19,7 @@ function renderRock(rock) {
     p.textContent = usd;
     
     const button = document.createElement('button');
-    button.textContent = 'I have 1 dollar and I want a rock';
+    button.textContent = 'I have money and I want a rock';
     button.value ='buy';
     p.appendChild(button);
 

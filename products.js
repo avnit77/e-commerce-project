@@ -1,5 +1,5 @@
-import rocks from './data/rocks';
-import renderRocks from './render-rocks';
+import rocks from './data/rocks.js';
+import renderRocks from './render-rocks.js';
 
 const list = document.getElementById('rocks');
 

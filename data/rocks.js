@@ -1,7 +1,7 @@
 const igneous = {
     id: 'igneous',
     name: 'Igneous Rock',
-    image: '../photos/igneous.jpg',
+    image: '../photos/igeneous.jpg',
     description: 'Volcano barf',
     category: 'holes',
     price: 1.00,
