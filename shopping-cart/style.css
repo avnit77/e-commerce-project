@@ -1,0 +1,13 @@
+
+table {
+    width: 600px;
+}
+
+th {
+    text-align: center;
+    border: solid 3px rgb(10, 121, 141);
+}
+td {
+    text-align: center;
+    border: solid 2px rgb(255, 251, 5);
+}
