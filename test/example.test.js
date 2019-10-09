@@ -42,17 +42,17 @@ test ('renders a shopping cart', assert => {
         price: 1.00,
     };
 
-const igneousOrder = {
-    id: 'igneous',
-    quantity: 4,
-};
+    const igneousOrder = {
+        id: 'igneous',
+        quantity: 4,
+    };
 
-const expected =  '<tr><td>Igneous Rock</td><td>4</td><td>$1.00</td><td>$4.00</td></tr>';
+    const expected =  '<tr><td>Igneous Rock</td><td>4</td><td>$1.00</td><td>$4.00</td></tr>';
 
-const rockElementTr = renderTableRow(igneous, igneousOrder);
-const stringHtmlOfRockElement = rockElementTr.outerHTML;
+    const rockElementTr = renderTableRow(igneous, igneousOrder);
+    const stringHtmlOfRockElement = rockElementTr.outerHTML;
 
-assert.equal(stringHtmlOfRockElement, expected);
+    assert.equal(stringHtmlOfRockElement, expected);
 
 });
 
@@ -67,7 +67,7 @@ test('renders a line item', assert => {
         id: 'igneous',
         quantity: 3
     };
-    const igneous= findById(rocks, lineItem.id);
+    const igneous = findById(rocks, lineItem.id);
     const expected = '<tr><td>Igneous Rock</td><td>3</td><td>$1.00</td><td>$3.00</td></tr>';
 
     // act

@@ -6,7 +6,7 @@ const tableElement = document.querySelector('tbody');
 const totalCell = document.getElementById('order-total-cell');
 
 
-for (let i =0; i < cart.length; i++) {
+for (let i = 0; i < cart.length; i++) {
     const lineItem = cart[i];
     const rock = findById(rocks, lineItem.id);
     const dom = renderTableRow(rock, lineItem);
@@ -14,7 +14,6 @@ for (let i =0; i < cart.length; i++) {
     tableElement.appendChild(dom);
 }
 
-    
-    let cartTotal = calcOrderTotal(cart, rocks);
-    totalCell.textContent = makePrettyCurrency(cartTotal);
+let cartTotal = calcOrderTotal(cart, rocks);
+totalCell.textContent = makePrettyCurrency(cartTotal);
     

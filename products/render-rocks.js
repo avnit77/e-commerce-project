@@ -1,4 +1,4 @@
- export default (rock) => {
+export default (rock) => {
 
     const rockElement = document.createElement('li');
     rockElement.className = rock.category;

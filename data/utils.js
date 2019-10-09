@@ -1,12 +1,12 @@
-import rocks, { cart } from '../api.js';
+// import rocks, { cart } from '../api.js';
 export const makePrettyCurrency = (number) =>
-number
-    .toLocaleString(
-        'en-US',
-        {
-            style: 'currency',
-            currency: 'USD',
-        });
+    number
+        .toLocaleString(
+            'en-US',
+            {
+                style: 'currency',
+                currency: 'USD',
+            });
 
 export function findById(items, id) {
     for (let i = 0; i < rocks.length; i++) {

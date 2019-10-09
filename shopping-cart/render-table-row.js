@@ -1,18 +1,17 @@
-import { makePrettyCurrency } from '../data/utils.js'
+import { makePrettyCurrency } from '../data/utils.js';
 
 const makeTd = (content) => {
     const tdElement = document.createElement('td');
     tdElement.textContent = content;
 
     return tdElement;
-}
+};
 
 export default (rock, order) => {
     const tableRow = document.createElement('tr');
 
     const totalPrice = order.quantity * rock.price;
     const prettyPrice = makePrettyCurrency(rock.price);
-    
     const prettyTotal = makePrettyCurrency(totalPrice);
   
 
@@ -26,5 +25,5 @@ export default (rock, order) => {
     tableRow.appendChild(columnThree);
     tableRow.appendChild(columnFour);
 
-    return tableRow
+    return tableRow;
 };
