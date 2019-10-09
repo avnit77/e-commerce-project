@@ -47,7 +47,7 @@ test ('renders a shopping cart', assert => {
         quantity: 4,
     };
 
-    const expected =  '<tr><td>Igneous Rock</td><td>4</td><td>$1.00</td><td>$4.00</td></tr>';
+    const expected = '<tr><td>Igneous Rock</td><td>4</td><td>$1.00</td><td>$4.00</td></tr>';
 
     const rockElementTr = renderTableRow(igneous, igneousOrder);
     const stringHtmlOfRockElement = rockElementTr.outerHTML;
