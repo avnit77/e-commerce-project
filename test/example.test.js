@@ -111,7 +111,7 @@ test('calculate line total', (assert) => {
 test('calculate order total', (assert) => {
     // arrange
 
-    const expected = "$602.00";
+    const expected = '$602.00';
 
     // act
     const orderTotal = calcOrderTotal(cart, rocks);
