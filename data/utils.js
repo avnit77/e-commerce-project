@@ -1,4 +1,4 @@
-// import rocks, { cart } from '../api.js';
+import rocks from '../api.js';
 export const makePrettyCurrency = (number) =>
     number
         .toLocaleString(
