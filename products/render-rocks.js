@@ -24,6 +24,7 @@ export default (rock) => {
     const myButton = document.createElement('button');
 
     myButton.textContent = 'I have money and I want a rock';
+    //myButton.addEventListener('click', addClickedItemToLocalStorage)
     myButton.value = rock.id;
     pTag.appendChild(myButton);
 

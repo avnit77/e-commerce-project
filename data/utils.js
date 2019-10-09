@@ -21,7 +21,6 @@ export function findById(items, id) {
 
 export function calcLineTotal(quantity, price) {
     return quantity * price;
-
 }
 
 export function calcOrderTotal(cart, rocks) {
@@ -34,6 +33,13 @@ export function calcOrderTotal(cart, rocks) {
         const lineTotal = calcLineTotal(lineItem.quantity, rock.price);
         orderTotal += lineTotal;
     }
+
+    //could also handle with forEach:
+    // cart.forEach(lineItem => {
+    //     cont rock = findById(product, lineItem.id);
+    //     const lineTotal = calcLineItem(lineItem.quantity, plant.price);
+    //     orderTotal+=lineTotal
+    // });
 
     return makePrettyCurrency(orderTotal);
 }

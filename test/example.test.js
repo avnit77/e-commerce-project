@@ -1,7 +1,8 @@
 import renderRock from '../products/render-rocks.js';
 import renderTableRow from '../shopping-cart/render-table-row.js';
 import rocks, { cart } from '../api.js';
-import { findById } from '../data/utils.js';
+import { findById, calcLineTotal, calcOrderTotal } from '../data/utils.js';
+
 
 
 const test = QUnit.test;
@@ -76,4 +77,45 @@ test('renders a line item', assert => {
     
     // assert
     assert.deepEqual(html, expected);
+});
+
+
+test('find product by id returns null if not found', assert => {
+    // arrange
+    const id = 'not found';
+    const expected = null;
+
+    // act
+    const foundRock = findById(rocks, id);
+
+
+    // assert
+    assert.equal(foundRock, expected);
+});
+
+
+
+test('calculate line total', (assert) => {
+    // arrange
+    const quantity = 3;
+    const price = 2.0;
+    const expected = 6.00;
+
+    // act 
+    const total = calcLineTotal(quantity, price);
+    // assert
+    assert.equal(total, expected);
+});
+
+
+test('calculate order total', (assert) => {
+    // arrange
+
+    const expected = "$602.00";
+
+    // act
+    const orderTotal = calcOrderTotal(cart, rocks);
+
+    // assert
+    assert.equal(orderTotal, expected);
 });
