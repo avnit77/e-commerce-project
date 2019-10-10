@@ -1,4 +1,4 @@
-import rocks from '../api.js';
+// import rocks from '../api.js';
 export const makePrettyCurrency = (number) =>
     number
         .toLocaleString(
@@ -9,9 +9,8 @@ export const makePrettyCurrency = (number) =>
             });
 
 export function findById(items, id) {
-    for (let i = 0; i < rocks.length; i++) {
+    for (let i = 0; i < items.length; i++) {
         const item = items[i];
-    
         if (item.id === id) {
             return item;
         } 
