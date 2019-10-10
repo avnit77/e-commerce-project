@@ -1,5 +1,4 @@
 import { findById } from '../data/utils.js';
-import rocks from '../api.js';
 
 export default (rock) => {
 
