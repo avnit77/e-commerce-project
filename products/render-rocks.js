@@ -28,7 +28,7 @@ export default (rock) => {
 
    
     myButton.textContent = 'I have money and I want a rock';
-    myButton.value = rocks.id;
+    myButton.value = rock.id;
     myButton.addEventListener('click', () => {
 
         let json = localStorage.getItem('CART');
