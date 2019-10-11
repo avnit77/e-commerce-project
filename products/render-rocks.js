@@ -16,12 +16,12 @@ export default (rock) => {
 
     rockElement.appendChild(someImage);
 
-    const pTag = document
-        .createElement('p');
+    const pTag = document.createElement('p');
 
     pTag.className = 'price';
     pTag.textContent = '$' + rock.price.toFixed(2);
     rockElement.appendChild(pTag);
+
 
     const myButton = document.createElement('button');
 
@@ -58,6 +58,12 @@ export default (rock) => {
 
         alert('1 ' + rock.name + ' added to cart');
 
+        const counter = document.createElement('count');
+        counter.id = ('counter');
+        counter.quantity = lineItem.quantity;
+        counter.textContent = 'You have ' + counter.quantity .toFixed() + ' ' + lineItem.id + ' rocks in your cart';
+        
+        rockElement.appendChild(counter);
     });
 
     pTag.appendChild(myButton);

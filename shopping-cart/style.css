@@ -1,13 +1,13 @@
 
 body{
-    background-image: url("../photos/background.jpg");
-    background-size: 99%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
+    height: 100%;
+    margin: none;
+    background-image: url("../photos/background.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
