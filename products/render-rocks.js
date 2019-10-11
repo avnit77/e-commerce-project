@@ -1,3 +1,5 @@
+import { findById } from '../data/utils.js';
+
 export default (rock) => {
 
     const rockElement = document.createElement('li');
@@ -23,9 +25,41 @@ export default (rock) => {
 
     const myButton = document.createElement('button');
 
+   
     myButton.textContent = 'I have money and I want a rock';
-    //myButton.addEventListener('click', addClickedItemToLocalStorage)
     myButton.value = rock.id;
+    myButton.addEventListener('click', () => {
+
+        let json = localStorage.getItem('CART');
+        let cart;
+        if (json) {
+            cart = JSON.parse(json);
+        }
+        else {
+            cart = [];
+        }
+       
+        let lineItem = findById(cart, rock.id);
+        
+        if (!lineItem) {
+            lineItem = {
+                id: rock.id,
+                quantity: 1
+            };
+
+            cart.push(lineItem);
+        }
+        else {
+            lineItem.quantity++;
+        }
+
+        json = JSON.stringify(cart);
+        localStorage.setItem('CART', json);
+
+        alert('1 ' + rock.name + ' added to cart');
+
+    });
+
     pTag.appendChild(myButton);
 
     return rockElement;

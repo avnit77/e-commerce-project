@@ -1,9 +1,16 @@
 body{
     background-image: url("../photos/background.jpg");
-
+    background-size: 99%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 header{
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211, 0.8);
     justify-content: flex-end;
     width: 800px;
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
