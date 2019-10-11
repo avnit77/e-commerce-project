@@ -21,7 +21,7 @@ test('renders a rock', assert => {
         price: 1.00,
     };
 
-    const expected = '<li class="holes" title="Volcano barf"><h3>Igneous Rock</h3><img src="../photos/igneous.jpg" alt="Igneous Rock image"><p class="price">$1.00<button value="igneous">I have money and I want a rock</button></p></li>';
+    const expected = '<li class="holes" title="Volcano barf"><h3>Igneous Rock</h3><img src="../photos/igneous.jpg" alt="Igneous Rock image"><p class="price">$1.00<button value="igneous">I have money and I want a rock</button></p><count id="counter"></count></li>';
     
     // act
     const dom = renderRock(igneous);
