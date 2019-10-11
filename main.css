@@ -2,7 +2,7 @@ body {
    
     height: 100%;
     margin: none;
-    background-image: url("../photos/background.jpg");
+    background-image: url("./photos/background.jpg");
     background-size: cover;
 }
 
@@ -36,12 +36,15 @@ h1{
 main {
     display: flex;
     justify-content: center;
+    font-variant: small-caps;
+    color: white;
 }
 
 figure{
     border: 5px solid black;
     border-radius: 22px;
     background-color: white;
+
     display: flex;
     flex-direction: column;
 }
@@ -51,20 +54,16 @@ figure:hover{
     color: black;
 }
 
-figcaption{
-   color: white;
-}
 
-figcaption:hover{
-    color: black;
-}
 
 p {
     background: rgb(211, 211, 211, 0.8);
     border-radius: 20px;
+    font-size: 20px;
 }
 p:hover{
     padding: 15px;
+    font-size: 25px;
 }
 .rock {
     display: flex;

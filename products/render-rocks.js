@@ -24,12 +24,15 @@ export default (rock) => {
     rockElement.appendChild(pTag);
 
     const myButton = document.createElement('button');
-
+    let rockCounter = 0; 
    
     myButton.textContent = 'I have money and I want a rock';
     myButton.value = rock.id;
     myButton.addEventListener('click', () => {
 
+        rockCounter++;
+
+        
         let json = localStorage.getItem('CART');
         let cart;
         if (json) {
@@ -56,7 +59,9 @@ export default (rock) => {
         json = JSON.stringify(cart);
         localStorage.setItem('CART', json);
 
-        alert('1 ' + rock.name + ' added to cart');
+        let shoppingCart = document.getElementById('order-total');
+        shoppingCart.textContent = rockCounter; 
+ 
 
     });
 
