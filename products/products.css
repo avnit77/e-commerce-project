@@ -1,13 +1,12 @@
 body{
     background-image: url("../photos/background.jpg");
-    background-size: 99%;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-size: 100%;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 header{
     background-color: rgb(211, 211, 211, 0.8);
@@ -81,6 +80,10 @@ li{
     font-size: 25px;
     color: white;
     padding: 10px;
+}
+#counter {
+    color: white;
+    margin-bottom: 10px;
 }
 button {
     color: rgb(249, 252, 255); 
